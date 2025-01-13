@@ -16,6 +16,10 @@ function BottomTabNavigator() {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
+        tabBarItemStyle:{
+          backgroundColor: '#1E293B',
+          height: 160,
+        },
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
           switch(route.name) {
@@ -36,8 +40,10 @@ function BottomTabNavigator() {
               break;
           }
 
-
           return <Ionicons name={iconName} size={size} color={color} />;
+        },
+        tabBarLabelStyle: {
+          color: '#94A3B8',
         },
         headerShown: false,
       })}
@@ -47,22 +53,20 @@ function BottomTabNavigator() {
       }}
     >
        <Tab.Screen name="Dashboard" component={Dashboard} options={{ tabBarLabel: 'Home' }} />
-      <Tab.Screen name="Calendar" component={CalendarPage} options={{ tabBarLabel: 'Calendar' }} />
+      <Tab.Screen name="Workout" component={WorkoutPage} options={{ tabBarLabel: 'Workout' }} />
       <Tab.Screen
         name="Nutritions"
         component={LogPage}
         options={{
           tabBarLabel: '',
           tabBarIcon: ({ focused }) => (
-             <LinearGradient style={styles.customButton}
-             colors={['#0900FF', '#5539BA']}
-             >
+            <LinearGradient style={styles.customButton}colors={['#0900FF', '#5539BA']}>
               <Ionicons name="add" size={35} color="white" />
             </LinearGradient>
           ),
         }}
       />
-      <Tab.Screen name="Workout" component={WorkoutPage} options={{ tabBarLabel: 'Workout' }} />
+        <Tab.Screen name="Calendar" component={CalendarPage} options={{ tabBarLabel: 'Calendar' }} />
       <Tab.Screen name="Account" component={AccountPage} options={{ tabBarLabel: 'Account' }} />
     </Tab.Navigator>
   );
