@@ -80,7 +80,7 @@ function Dashboard() {
   };
 
   return (
-    <SafeAreaView style={styles.safeArea}>
+    <SafeAreaView style={[styles.safeArea,{ flex: 1 }]}>
       <ScrollView contentContainerStyle={[styles.scrollView, { paddingBottom: 50 }]} bounces={false}>
         <Text style={styles.headerText}>Dashboard</Text>
         {/* Section #1*/}
@@ -195,7 +195,7 @@ const chartConfig = {
     borderRadius: 16
   },
   propsForDots: {
-    r: "6",
+    r: "5",
     strokeWidth: "2",
     stroke: "#ffa726"
   }

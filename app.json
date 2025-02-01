@@ -7,6 +7,14 @@
     "icon": "./assets/img/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "plugins": [
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "The app needs to access your calendar."
+        }
+      ]
+    ],
     "splash": {
       "image": "./assets/img/splash-icon.png",
       "resizeMode": "contain",
@@ -19,7 +27,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/img/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.fitGO"
     },
     "web": {
       "favicon": "./assets/img/favicon.png"

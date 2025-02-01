@@ -14,15 +14,18 @@
     "@react-navigation/bottom-tabs": "^7.0.0",
     "@react-navigation/native": "^7.0.14",
     "expo": "~52.0.23",
+    "expo-calendar": "~14.0.6",
     "expo-linear-gradient": "~14.0.1",
     "expo-status-bar": "~2.0.0",
     "react": "18.3.1",
     "react-native": "0.76.5",
+    "react-native-calendars": "^1.1308.1",
+    "react-native-chart-kit": "^6.12.0",
     "react-native-safe-area-context": "^5.1.0",
     "react-native-screens": "^4.4.0",
     "react-native-svg": "15.8.0",
-    "react-native-vector-icons": "^9.0.0",
-    "react-native-chart-kit": "^6.12.0"
+    "react-native-svg-charts": "^5.4.0",
+    "react-native-vector-icons": "^9.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

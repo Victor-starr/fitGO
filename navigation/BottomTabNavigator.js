@@ -1,9 +1,8 @@
-// filepath: /c:/Users/vikto/Desktop/fitgo/navigation/BottomTabNavigator.js
 import * as React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from 'react-native-vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
-import { View, Text, StyleSheet } from 'react-native';
+import {StyleSheet } from 'react-native';
 
 import Dashboard from '../apps/Dashboard';
 import CalendarPage from '../apps/CalendarPage.js';
